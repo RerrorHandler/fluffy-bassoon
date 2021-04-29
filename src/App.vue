@@ -8,6 +8,8 @@
     <Content3 />
     <Jobshowcase />
     <Step />
+    <Showcase />
+    <Mapshow />
     <Footer />
   </div>
 </template>
@@ -21,6 +23,8 @@ import Content3 from './components/Content3.vue'
 import Footer from './components/Footer.vue'
 import Jobshowcase from './components/Jobshowcase.vue'
 import Step from './components/Step.vue'
+import Showcase from './components/Showcase.vue'
+import Mapshow from './components/Mapshow.vue'
 export default {
   name: 'App',
   components: {
@@ -31,7 +35,9 @@ export default {
     Content3,
     Footer,
     Jobshowcase,
-    Step
+    Step,
+    Showcase,
+    Mapshow
   }
 }
 </script>

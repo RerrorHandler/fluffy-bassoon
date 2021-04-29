@@ -7,12 +7,11 @@
                 <div>можно достичь при помощи</div>
                 <div>интернет - маркетинга</div>
                 <div class="mt-20 relative">
-                    <input type="text" class="px-4 py-3 w-100 border-2 border-gray-400">
+                    <input type="text" class="px-4 py-3 w-100 border-2 border-gray-400" placeholder="+7 (___) ___ __ ___">
                     <div class="absolute text-gray-500 -top-5 left-20 text-3xl form-text-2 px-3">Введите Ваш номер</div>
                 </div>
-                <button class="relative w-full">
-                    <img src="../assets/button-form.png" class="">
-                    <span class="absolute top-12 left-24 px-1 text-yellow-900 text-2xl">Получить презентацию</span>
+                <button @click="TelegramOrWhatsApp(tow)" class="relative w-full">
+                    <img src="../assets/buttonformprez.png" class="btnprez">
                 </button>
             </div>
             <div class="flex flex-col text-2xl mt-10 ml-20">
@@ -41,3 +40,20 @@ background: radial-gradient(circle, rgba(226,228,232,1) 38%, rgba(226,228,232,1)
     height: 35rem/* 384px */
 }
 </style>
+<script>
+export default {
+    data () {
+      return {tow : false};
+  },
+  methods: {
+    TelegramOrWhatsApp: function (ToW) {
+        if (ToW === true) {
+        location.href='https://web.telegram.org/#/im?p=@muju_c07'
+        }
+        else {
+            location.href="https://api.whatsapp.com/send?phone=77476498669&text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C%2C%20%D1%8F%20%D0%BF%D0%BE%20%D0%BF%D0%BE%D0%B2%D0%BE%D0%B4%D1%83"
+        }
+    }
+},
+}
+</script>

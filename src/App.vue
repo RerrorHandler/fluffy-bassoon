@@ -4,10 +4,10 @@
     <div class="flex items-center justify-center my-5 ml-auto mr-auto Line justify-items-center"></div>
     <SubHeader />
     <Content1 />
-    <Content2 />
-    <Content3 />
     <Jobshowcase />
+    <Content2 />
     <Step />
+    <Content3 />
     <Showcase />
     <Mapshow />
     <Footer />
